@@ -8,7 +8,12 @@ const cld = new Cloudinary({
 });
 
 const { src, ...props } = Astro.props;
-const cldSrc = cld.image(src).setDeliveryType('fetch');
+
+let cldSrc = cld.image(src);
+
+if ( src.startsWith('https://')) {
+  cldSrc.setDeliveryType('fetch');
+}
 
 interface Props {
   src: string;
