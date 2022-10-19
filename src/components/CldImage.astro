@@ -1,0 +1,10 @@
+---
+interface Props {
+  src: string;
+  width: string;
+  height: string;
+  alt: string;
+}
+---
+
+<img loading="lazy" {...Astro.props} />
