@@ -5,7 +5,7 @@ import Nav from '../components/Nav.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
 
-const projects = (await Astro.glob<Project>('./project/**/*.md'))
+const projects = Object.values(import.meta.glob<Project>('./project/**/*.md', { eager: true }))
 	.filter(({ frontmatter }) => !!frontmatter.publishDate)
 	.sort(
 		(a, b) =>
