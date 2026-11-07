@@ -2,7 +2,6 @@
 
 Demo for tutorial [How to Optimize & Dynamically Resize Images in Astro with Cloudinary](https://www.youtube.com/watch?v=bwGFqqS4gIE)
 
-🚀 See Demo: https://my-astro-cloudinary.netlify.app/about/
 
 📝 Article: https://spacejelly.dev/posts/how-to-optimize-dynamically-resize-images-in-astro-with-cloudinary/
 
